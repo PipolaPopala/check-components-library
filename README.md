@@ -1,1 +1,1 @@
-### Link to the deployed application - https://vercel.com/pipolas-projects/check-components-library
+### Link to the deployed application - https://check-components-library.vercel.app/
