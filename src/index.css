@@ -137,14 +137,14 @@ hr {
   height: 16px;
 }
 
-.arrow-dark * {
+.arrow-dark {
   fill: var(--color-text-dark);
 }
 
-.arrow-white * {
+.arrow-white {
   fill: var(--color-white);
 }
 
-.arrow-gray * {
+.arrow-gray {
   fill: var(--color-text-gray);
 }
