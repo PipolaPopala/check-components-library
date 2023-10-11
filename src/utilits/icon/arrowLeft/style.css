@@ -1,0 +1,11 @@
+.arrow-dark {
+  fill: var(--color-text-dark);
+}
+
+.arrow-white {
+  fill: var(--color-white);
+}
+
+.arrow-gray {
+  fill: var(--color-text-gray);
+}

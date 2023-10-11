@@ -24,8 +24,8 @@ hr {
   width: 100%;
 }
 
-.rotate-180 {
-  transform: rotate(180deg);
+.dark-side {
+  background-color: var(--color-dark-side);
 }
 
 .section {
@@ -37,114 +37,4 @@ hr {
   align-items: center;
   row-gap: 20px;
   border-radius: 20px;
-}
-
-.dark-side {
-  background-color: var(--color-dark-side);
-}
-
-
-
-.color-primary {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-}
-
-.color-secondary { 
-  background-color: var(--color-secondary);
-  color: var(--color-text-gray);
-}
-
-.color-ghost { 
-  background-color: var(--color-transparent);
-  color: var(--color-text-gray);
-}
-
-.color-back-in-dark { 
-  background-color: var(--color-back-in-dark);
-  color: var(--color-white);
-}
-
-
-
-.btn {
-  cursor: pointer;
-  border-radius: 10px;
-  border: none;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.btn-text-big {
-  font-size: 16px;
-  padding: 16px 22px;
-}
-
-.btn-text-medium {
-  font-size: 14px;
-  padding: 14px 18px;
-}
-
-.btn-text-small {
-  font-size: 12px;
-  padding: 12px 16px;
-}
-
-.btn-arrow-big {
-  padding: 14px;
-}
-
-.btn-arrow-medium {
-  padding: 11px;
-}
-
-.btn-arrow-small {
-  padding: 12px;
-}
-
-.arrow-big-text {
-  width: 24px;
-  height: 24px;
-}
-
-.arrow-medium-text {
-  width: 18px;
-  height: 18px;
-}
-
-.arrow-small-text {
-  width: 14px;
-  height: 14px;
-}
-
-.arrow-big {
-  width: 28px;
-  height: 28px;
-}
-
-.arrow-medium {
-  width: 24px;
-  height: 24px;
-}
-
-.arrow-small {
-  width: 16px;
-  height: 16px;
-}
-
-.arrow-dark {
-  fill: var(--color-text-dark);
-}
-
-.arrow-white {
-  fill: var(--color-white);
-}
-
-.arrow-gray {
-  fill: var(--color-text-gray);
 }

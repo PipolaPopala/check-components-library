@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkpoint Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="body">
+
+    <div class="body-container">
+
+      <header class="header">
+
+        <div class="header__container">
+          <div class="logo">
+            <img class="logo__img" src="icons/ellipse.svg" alt="">
+            <a class="logo__text" href="index.html">CHECPOINT <br> manager</a>
+            <img class="logo__img" src="icons/rectangle.svg" alt="">
+            <img class="logo__img" src="icons/ellipse.svg" alt="">
+          </div>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="event_list.html">События</a></li>
+              <li class="nav__item"><a class="nav__link" href="pass_list.html">Пропуска</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Запросы</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              <a href="log_in.html"><img class="nav__img" src="icons/log_in.svg" alt=""></a>
+            </ul>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main">
+        <section class="section-pass-auto">
+
+          <div class="section-pass-auto__wrapper">
+            <h1 class="section-pass-auto__title">Оформление пропуска для <br> автомобилей</h1>
+            <!-- <div class="section-pass-auto__btn-wrapper-heading">
+              <button class="btn-single btn" type="button">Разовый</button>
+              <button class="btn-temporary btn" type="button">Временный</button>
+            </div> -->
+            <form class="form-choice-time">
+              <label class="label-time-btn btn"><input class="input-time-btn" type="radio" name="time-choice">Разовый</label>
+              <label class="label-time-btn btn"><input class="input-time-btn" type="radio" name="time-choice">Временный</label>
+            </form>
+  
+            <form class="section-pass-auto__form" action="">
+              <div class="section-pass-auto__item-wrapper">
+                <div class="section-pass-auto__item">
+                  <p class="section-pass-auto__text">Адрес</p>
+                  <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
+                </div>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
+              </div>
+              <div class="section-pass-auto__item-wrapper">
+                <div class="section-pass-auto__item">
+                  <p class="section-pass-auto__text">Номер автомобиля</p>
+                  <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
+                </div>
+              </div>
+              <div class="section-pass-auto__item-wrapper">
+                <div class="section-pass-auto__item">
+                  <p class="section-pass-auto__text">Марка автомобиля</p>
+                  <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
+                </div>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
+              </div>
+              <div class="section-pass-auto__item-wrapper">
+                <div class="section-pass-auto__item">
+                  <p class="section-pass-auto__text">Тип транспорта</p>
+                  <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
+                </div>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
+              </div>
+              <div class="section-pass-auto__item-wrapper">
+                <div class="section-pass-auto__item">
+                  <p class="section-pass-auto__text">Время визита</p>
+                  <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
+                </div>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
+              </div>
+              <button class="section-pass-auto__btn btn-clouds btn" type="button">Получить <br> приглашение</button>
+            </form>
+          </div>
+
+        </section>
+      </main>
+
+      <footer class="footer">
+
+        <div class="footer__inner-top">
+          <div class="footer__container">
+            <div class="logo">
+              <img class="logo__img" src="icons/ellipse.svg" alt="">
+              <a class="logo__text" href="index.html">CHECPOINT <br> manager</a>
+              <img class="logo__img" src="icons/rectangle.svg" alt="">
+              <img class="logo__img" src="icons/ellipse.svg" alt="">
+            </div>
+  
+            <div class="footer__icons">
+              <a href="http:#"><img class="footer__icon" src="icons/letter.svg" alt=""></a>
+              <a href="http:#"><img class="footer__icon" src="icons/check.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__inner-bot">
+          <p class="footer__text">Checkpoint manager <span class="color-gray">®</span> 2023</p>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkpoint Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="body">
+
+    <div class="body-container">
+
+      <header class="header">
+
+        <div class="header__container">
+          <div class="logo">
+            <img class="logo__img" src="icons/ellipse.svg" alt="">
+            <a class="logo__text" href="index.html">CHECPOINT <br> manager</a>
+            <img class="logo__img" src="icons/rectangle.svg" alt="">
+            <img class="logo__img" src="icons/ellipse.svg" alt="">
+          </div>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link nav__link--active" href="event_list.html">События</a></li>
+              <li class="nav__item"><a class="nav__link" href="pass_list.html">Пропуска</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Запросы</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              <a href="log_in.html"><img class="nav__img" src="icons/log_in.svg" alt=""></a>
+            </ul>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main">
+        <section class="section-event-list main__container">
+
+          <div class="section-event-list__wrapper">
+
+            <div class="section-event-list__search-wrapper section-event-list__search-wrapper--mb">
+              <img class="section-event-list__search-icon" src="icons/search_icon.svg" alt="">
+              <input class="section-event-list__search input" type="text" name="" id="" placeholder="Поиск">
+            </div>
+            <h1 class="section-event-list__title section-event-list__title--mb">Мои события</h1>
+            <div class="section-event-list__filter section-event-list__filter--mb">
+              <p class="section-event-list__filter-text">Фильтровать по:</p>
+              <!-- <button class="section-event-list__filter-btn btn" type="button">Типу события</button> -->
+              <label class="label-filter"><input class="input-filter" type="checkbox">Типу события</label>
+            </div>
+
+            <div class="section-event-list__table">
+
+              <div class="section-event-list__table-header">
+                <p class="section-event-list__table-header-text-icon">...</p>
+                <p class="section-event-list__table-header-text-event">Событие</p>
+                <p class="section-event-list__table-header-text-name">Наименование обекта пропуска</p>
+                <p class="section-event-list__table-header-text-date">Дата</p>
+              </div>
+
+              <div class="section-event-list__table-item">
+                <img class="section-event-list__table-item-img" src="icons/pass_icon.svg" alt="">
+                <div class="section-event-list__table-item-text-event">
+                  <p>Пропуск создан</p>
+                </div>
+                <div class="section-event-list__table-item-text-name">
+                  <p>Mazda,  номер: М715АВ</p>
+                </div>
+                <div class="section-event-list__table-item-text-date">
+                  <p>02.03.2023</p>
+                </div>
+              </div>
+              
+              <div class="section-event-list__table-item">
+                <img class="section-event-list__table-item-img" src="icons/pass_icon.svg" alt="">
+                <div class="section-event-list__table-item-text-event">
+                  <p>Статус пропуска изменен: гость на территории</p>
+                </div>
+                <div class="section-event-list__table-item-text-name">
+                  <p>Иванов Сергей</p>
+                </div>
+                <div class="section-event-list__table-item-text-date">
+                  <p>02.03.2023</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      </main>
+
+      <footer class="footer">
+
+        <div class="footer__inner-top">
+          <div class="footer__container">
+            <div class="logo">
+              <img class="logo__img" src="icons/ellipse.svg" alt="">
+              <a class="logo__text" href="index.html">CHECPOINT <br> manager</a>
+              <img class="logo__img" src="icons/rectangle.svg" alt="">
+              <img class="logo__img" src="icons/ellipse.svg" alt="">
+            </div>
+  
+            <div class="footer__icons">
+              <a href="http:#"><img class="footer__icon" src="icons/letter.svg" alt=""></a>
+              <a href="http:#"><img class="footer__icon" src="icons/check.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__inner-bot">
+          <p class="footer__text">Checkpoint manager <span class="color-gray">®</span> 2023</p>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </body>
+</html>

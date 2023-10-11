@@ -1,170 +1,228 @@
-import BtnText from './components/btn-text';
-import BtnArrow from './components/btn-arrow';
+import BtnText from './components/UI/bthText/btnText'
+import BtnArrow from './components/UI/bthArrow/btnArrow'
 
 const primary = 'color-primary'
 const secondary = 'color-secondary'
 const ghost = 'color-ghost'
 const backInDark = 'color-back-in-dark'
+
 const btnTextBig = 'btn-text-big'
 const btnTextMedium = 'btn-text-medium'
 const btnTextSmall = 'btn-text-small'
+
 const btnArrowBig = 'btn-arrow-big'
 const btnArrowMedium = 'btn-arrow-medium'
 const btnArrowSmall = 'btn-arrow-small'
+
 const arrowBigText = 'arrow-big-text'
 const arrowMediumText = 'arrow-medium-text'
 const arrowSmallText = 'arrow-small-text'
+
 const arrowBig = 'arrow-big'
 const arrowMedium = 'arrow-medium'
 const arrowSmall = 'arrow-small'
-const arrowWhite = 'arrow-white'
-const arrowDark = 'arrow-dark'
-const arrowGray = 'arrow-gray'
 
-let text = 'Active'
+const arrowWhite = 'arrow-white'
+const arrowGray = 'arrow-gray'
+// const arrowDark = 'arrow-dark'
 
 function App() {
+  const hendleClick = () => {
+    alert("hi")
+  }
   return (
     <div>
       {/* Секция кнопок с текстом и стрелками */}
       <section className="section">
         <hr></hr>
         <BtnText
-        classes={[btnTextBig, primary]}
-        text={text}
-        arrowClasses={[arrowBigText, arrowWhite]}
-        />
+          classes={[btnTextBig, primary]}
+          arrowClasses={[arrowBigText, arrowWhite]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
         <BtnText 
-        classes={[btnTextMedium, primary]}
-        text={text}
-        arrowClasses={[arrowMediumText, arrowWhite]}
-        />
+          classes={[btnTextMedium, primary]}
+          arrowClasses={[arrowMediumText, arrowWhite]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
         <BtnText 
-        classes={[btnTextSmall, primary]}
-        text={text}
-        arrowClasses={[arrowSmallText, arrowWhite]}
-        />
+          classes={[btnTextSmall, primary]}
+          arrowClasses={[arrowSmallText, arrowWhite]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
 
         <BtnText 
-        classes={[btnTextBig, secondary]}
-        text={text}
-        arrowClasses={[arrowBigText, arrowGray]}
-        />
+          classes={[btnTextBig, secondary]}
+          arrowClasses={[arrowBigText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
         <BtnText 
-        classes={[btnTextMedium, secondary]}
-        text={text}
-        arrowClasses={[arrowMediumText, arrowGray]}
-        />
+          classes={[btnTextMedium, secondary]}
+          arrowClasses={[arrowMediumText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
         <BtnText 
-        classes={[btnTextSmall, secondary]}
-        text={text}
-        arrowClasses={[arrowSmallText, arrowGray]}
-        />
+          classes={[btnTextSmall, secondary]}
+          arrowClasses={[arrowSmallText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
 
         <BtnText 
-        classes={[btnTextBig, ghost]}
-        text={text}
-        arrowClasses={[arrowBigText, arrowGray]}
-        />
+          classes={[btnTextBig, ghost]}
+          arrowClasses={[arrowBigText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
         <BtnText 
-        classes={[btnTextMedium, ghost]}
-        text={text}
-        arrowClasses={[arrowMediumText, arrowGray]}
-        />
+          classes={[btnTextMedium, ghost]}
+          arrowClasses={[arrowMediumText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
         <BtnText 
-        classes={[btnTextSmall, ghost]}
-        text={text}
-        arrowClasses={[arrowSmallText, arrowGray]}
-        />
+          classes={[btnTextSmall, ghost]}
+          arrowClasses={[arrowSmallText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
+      </section>
+
+      {/* Секция кнопок с текстом и стрелками в тёмной теме*/}
+      <section className="section dark-side">
+        <hr></hr>
+        <BtnText
+          classes={[btnTextBig, primary]}
+          arrowClasses={[arrowBigText, arrowWhite]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
+
+        <BtnText 
+          classes={[btnTextMedium, backInDark]}
+          arrowClasses={[arrowMediumText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
+
+        <BtnText 
+          classes={[btnTextSmall, ghost]}
+          arrowClasses={[arrowSmallText, arrowGray]}
+          onClick={hendleClick}
+        > Active
+        </BtnText>
       </section>
 
       {/* Секция кнопок со стрелками */}
-      <section className='section'>
+      <section className="section">
         <hr></hr>
         <BtnArrow
-        classes={[btnArrowBig, primary]}
-        arrowClasses={[arrowBig, arrowWhite]}
+          classes={[btnArrowBig, primary]}
+          arrowClasses={[arrowBig, arrowWhite]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowMedium, primary]}
-        arrowClasses={[arrowMedium, arrowWhite]}
+          classes={[btnArrowMedium, primary]}
+          arrowClasses={[arrowMedium, arrowWhite]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowSmall, primary]}
-        arrowClasses={[arrowSmall, arrowWhite]}
-        />
-
-        <BtnArrow
-        classes={[btnArrowBig, secondary]}
-        arrowClasses={[arrowBig, arrowGray]}
-        />
-        <BtnArrow
-        classes={[btnArrowMedium, secondary]}
-        arrowClasses={[arrowMedium, arrowGray]}
-        />
-        <BtnArrow
-        classes={[btnArrowSmall, secondary]}
-        arrowClasses={[arrowSmall, arrowGray]}
+          classes={[btnArrowSmall, primary]}
+          arrowClasses={[arrowSmall, arrowWhite]}
+          onClick={hendleClick}
         />
 
         <BtnArrow
-        classes={[btnArrowBig, ghost]}
-        arrowClasses={[arrowBig, arrowGray]}
+          classes={[btnArrowBig, secondary]}
+          arrowClasses={[arrowBig, arrowGray]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowMedium, ghost]}
-        arrowClasses={[arrowMedium, arrowGray]}
+          classes={[btnArrowMedium, secondary]}
+          arrowClasses={[arrowMedium, arrowGray]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowSmall, ghost]}
-        arrowClasses={[arrowSmall, arrowGray]}
+          classes={[btnArrowSmall, secondary]}
+          arrowClasses={[arrowSmall, arrowGray]}
+          onClick={hendleClick}
+        />
+
+        <BtnArrow
+          classes={[btnArrowBig, ghost]}
+          arrowClasses={[arrowBig, arrowGray]}
+          onClick={hendleClick}
+        />
+        <BtnArrow
+          classes={[btnArrowMedium, ghost]}
+          arrowClasses={[arrowMedium, arrowGray]}
+          onClick={hendleClick}
+        />
+        <BtnArrow
+          classes={[btnArrowSmall, ghost]}
+          arrowClasses={[arrowSmall, arrowGray]}
+          onClick={hendleClick}
         />
       </section>
 
       {/* Секция кнопок со стрелками в тёмной теме */}
-      <section className='section dark-side'>
+      <section className="section dark-side">
         <hr></hr>
         <BtnArrow
-        classes={[btnArrowBig, primary]}
-        arrowClasses={[arrowBig, arrowWhite]}
+          classes={[btnArrowBig, primary]}
+          arrowClasses={[arrowBig, arrowWhite]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowMedium, primary]}
-        arrowClasses={[arrowMedium, arrowWhite]}
+          classes={[btnArrowMedium, primary]}
+          arrowClasses={[arrowMedium, arrowWhite]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowSmall, primary]}
-        arrowClasses={[arrowSmall, arrowWhite]}
-        />
-
-        <BtnArrow
-        classes={[btnArrowBig, backInDark]}
-        arrowClasses={[arrowBig, arrowWhite]}
-        />
-        <BtnArrow
-        classes={[btnArrowMedium, backInDark]}
-        arrowClasses={[arrowMedium, arrowWhite]}
-        />
-        <BtnArrow
-        classes={[btnArrowSmall, backInDark]}
-        arrowClasses={[arrowSmall, arrowWhite]}
+          classes={[btnArrowSmall, primary]}
+          arrowClasses={[arrowSmall, arrowWhite]}
+          onClick={hendleClick}
         />
 
         <BtnArrow
-        classes={[btnArrowBig, ghost]}
-        arrowClasses={[arrowBig, arrowWhite]}
+          classes={[btnArrowBig, backInDark]}
+          arrowClasses={[arrowBig, arrowWhite]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowMedium, ghost]}
-        arrowClasses={[arrowMedium, arrowWhite]}
+          classes={[btnArrowMedium, backInDark]}
+          arrowClasses={[arrowMedium, arrowWhite]}
+          onClick={hendleClick}
         />
         <BtnArrow
-        classes={[btnArrowSmall, ghost]}
-        arrowClasses={[arrowSmall, arrowWhite]}
+          classes={[btnArrowSmall, backInDark]}
+          arrowClasses={[arrowSmall, arrowWhite]}
+          onClick={hendleClick}
+        />
+
+        <BtnArrow
+          classes={[btnArrowBig, ghost]}
+          arrowClasses={[arrowBig, arrowWhite]}
+          onClick={hendleClick}
+        />
+        <BtnArrow
+          classes={[btnArrowMedium, ghost]}
+          arrowClasses={[arrowMedium, arrowWhite]}
+          onClick={hendleClick}
+        />
+        <BtnArrow
+          classes={[btnArrowSmall, ghost]}
+          arrowClasses={[arrowSmall, arrowWhite]}
+          onClick={hendleClick}
         />
       </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
