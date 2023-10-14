@@ -1,4 +1,4 @@
-.btn {
+.btn-icon {
   cursor: pointer;
   border-radius: 10px;
   border: none;
@@ -9,10 +9,6 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-}
-
-.rotate-180 {
-  transform: rotate(180deg);
 }
 
 .color-primary {
@@ -35,32 +31,39 @@
   color: var(--color-text-gray);
 }
 
-.btn-text-big {
-  font-size: 16px;
-  padding: 16px 22px;
+.color-active {
+  background-color: var(--color-active);
+  color: var(--color-white);
 }
 
-.btn-text-medium {
-  font-size: 14px;
-  padding: 14px 18px;
+.color-active-in-dark {
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
 }
 
-.btn-text-small {
-  font-size: 12px;
-  padding: 12px 16px;
+.btn-arrow-big {
+  padding: 14px;
 }
 
-.arrow-big-text {
+.btn-arrow-medium {
+  padding: 11px;
+}
+
+.btn-arrow-small {
+  padding: 12px;
+}
+
+.arrow-big {
+  width: 28px;
+  height: 28px;
+}
+
+.arrow-medium {
   width: 24px;
   height: 24px;
 }
 
-.arrow-medium-text {
-  width: 18px;
-  height: 18px;
-}
-
-.arrow-small-text {
-  width: 14px;
-  height: 14px;
+.arrow-small {
+  width: 16px;
+  height: 16px;
 }

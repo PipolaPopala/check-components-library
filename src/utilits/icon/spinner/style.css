@@ -1,0 +1,26 @@
+.spinner-black {
+  fill: var(--color-black);
+}
+
+.spinner-gray-dark {
+  fill: var(--color-active);
+}
+
+.spinner-gray-light {
+  fill: var(--color-text-gray);
+}
+
+.spinner-big {
+  width: 24px;
+  height: 24px;
+}
+
+.spinner-medium {
+  width: 20px;
+  height: 20px;
+}
+
+.spinner-small {
+  width: 16px;
+  height: 16px;
+}

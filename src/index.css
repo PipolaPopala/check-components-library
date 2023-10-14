@@ -14,6 +14,8 @@
   --color-transparent: transparent;
   --color-dark-side: #292929;
   --color-back-in-dark: #262626;
+  --color-active: #444B59;
+  --color-brand: #FFDC49;
 }
 
 body {
@@ -28,8 +30,14 @@ hr {
   background-color: var(--color-dark-side);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .section {
-  width: 800px;
+  width: 600px;
   padding: 20px;
   margin: 0 auto;
   display: flex;
@@ -37,4 +45,8 @@ hr {
   align-items: center;
   row-gap: 20px;
   border-radius: 20px;
+}
+
+.text {
+  color: var(--color-text-gray);
 }

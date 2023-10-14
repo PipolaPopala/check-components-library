@@ -1,0 +1,44 @@
+.check-label {
+  font-size: 18px;
+  color: var(--color-text-gray);
+  padding-left: 1.3em;
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check-box {
+  position: absolute;
+  margin-left: -1.3em;
+  margin-top: .1em;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-text-gray);
+  border-radius: 5px;
+}
+
+.check-input:checked + .check-box {
+  border: 5px solid var(--color-primary);
+}
+
+.check-input:focus + .check-box {
+  /* box-shadow: 0 0 0 0.1em var(--color-brand); */
+}
+
+.check-input:disabled + .check-box {
+  border: 2px solid var(--color-secondary);
+}
+
+.check-input:checked:disabled + .check-box {
+  border: 5px solid var(--color-secondary);
+}
+
+
+

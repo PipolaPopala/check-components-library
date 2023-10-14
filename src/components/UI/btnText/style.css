@@ -1,4 +1,4 @@
-.btn {
+.btn-text {
   cursor: pointer;
   border-radius: 10px;
   border: none;
@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
 }
 
 .color-primary {
@@ -31,29 +35,42 @@
   color: var(--color-text-gray);
 }
 
-.btn-arrow-big {
-  padding: 14px;
+.color-active {
+  background-color: var(--color-active);
+  color: var(--color-white);
 }
 
-.btn-arrow-medium {
-  padding: 11px;
+.color-active-in-dark {
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
 }
 
-.btn-arrow-small {
-  padding: 12px;
+.btn-text-big {
+  font-size: 16px;
+  padding: 16px 22px;
 }
 
-.arrow-big {
-  width: 28px;
-  height: 28px;
+.btn-text-medium {
+  font-size: 14px;
+  padding: 14px 18px;
 }
 
-.arrow-medium {
+.btn-text-small {
+  font-size: 12px;
+  padding: 12px 16px;
+}
+
+.arrow-big-text {
   width: 24px;
   height: 24px;
 }
 
-.arrow-small {
-  width: 16px;
-  height: 16px;
+.arrow-medium-text {
+  width: 18px;
+  height: 18px;
+}
+
+.arrow-small-text {
+  width: 14px;
+  height: 14px;
 }
