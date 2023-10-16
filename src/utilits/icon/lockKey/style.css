@@ -1,0 +1,13 @@
+.lockkey {
+  width: 24px;
+  height: 24px;
+  margin-top: 15px;
+}
+
+.dark {
+  fill: var(--color-black);
+}
+
+.gray {
+  fill: var(--color-text-gray);
+}

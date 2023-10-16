@@ -3,6 +3,10 @@ import BtnTextLoading from './components/UI/btnTextLoading/btnTextLoading'
 import BtnArrow from './components/UI/btnArrow/btnArrow'
 import RadioButton from './components/UI/radioButton/radioButton'
 import CheckBox from './components/UI/checkBox/checkBox'
+import InputText from './components/UI/inputText/inputText'
+import InputPassword from './components/UI/inputPassword/inputPassword'
+import InputArea from './components/UI/inputArea/inputArea'
+import InputTel from './components/UI/inputTel/inputTel'
 
 // основные цвета для background
 const primary = 'color-primary'
@@ -52,6 +56,9 @@ const spinnerGrayLight = 'spinner-gray-light'
 const spinnerBig = 'spinner-big'
 const spinnerMedium = 'spinner-medium'
 const spinnerSmall = 'spinner-small'
+
+const colorInputIconDark = 'dark'
+// const colorInputIconGray = 'gray'
 
 function App() {
   const hendleClick = () => {
@@ -440,6 +447,28 @@ function App() {
         disabled
         > Some text
         </CheckBox>
+      </section>
+
+      {/* Секция инпутов */}
+      <section className="section">
+        <hr></hr>
+        <p className='text'>Секция инпутов</p>
+        <InputText
+        colorIcon={colorInputIconDark}
+        > Title
+        </InputText>
+        <InputPassword
+        colorIcon={colorInputIconDark}
+        > Title
+        </InputPassword>
+        <InputArea
+        colorIcon={colorInputIconDark}
+        > Title
+        </InputArea>
+        <InputTel
+        colorIcon={colorInputIconDark}
+        > Title
+        </InputTel>
       </section>
 
     </div>
