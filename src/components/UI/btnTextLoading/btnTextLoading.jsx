@@ -2,7 +2,7 @@ import { SpinnerSvg } from "../../../utilits/icon/spinner";
 
 import './style.css';
 
-function BtnTextLoading({children, classes, spinnerClasses, ...props}) {
+function BtnTextLoading({classes, spinnerClasses, ...props}) {
   classes = classes.join(' ');
   spinnerClasses = spinnerClasses.join(' ');
   return (

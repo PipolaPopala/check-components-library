@@ -2,13 +2,14 @@ import { Phone } from "../../../utilits/icon/phone";
 
 import './style.css';
 
-function InputTel({children, colorIcon, name, ...props}) {
+function InputTel({children, classes, colorIcon, name, ...props}) {
+  classes = classes.join(' ');
   return (
     <div>
       <p className="input-title">{children}</p>
-      <div className="input-tel-wrapper">
+      <div className={"input-tel-wrapper " + classes}>
         <Phone color={colorIcon}/>
-        <input className="input-tel" type="tel" name={name} id="" placeholder="(123) 456 78 90" {...props}/>
+        <input className="input-tel" type="tel" name={name} id="" maxLength="16" placeholder="+7(___)___-__-__" {...props}/>
       </div>
     </div>
   );

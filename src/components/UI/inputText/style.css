@@ -13,7 +13,7 @@
   width: 427px;
   padding-left: 16px;
   border-radius: 12px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(139, 139, 139, 0.3);
   position: relative;
   display: flex;
 }
@@ -38,4 +38,12 @@
 
 .input-text-wrapper:focus-within {
   border: 2px solid var(--color-text-gray);
+}
+
+.dark-side-input-text input {
+  color: var(--color-text-gray);
+}
+
+.color-negative-input {
+  border-color: var(--color-negative) !important; 
 }

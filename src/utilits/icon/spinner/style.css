@@ -1,13 +1,9 @@
-.spinner-black {
-  fill: var(--color-black);
+.spinner {
+  fill: currentColor;
 }
 
 .spinner-gray-dark {
   fill: var(--color-active);
-}
-
-.spinner-gray-light {
-  fill: var(--color-text-gray);
 }
 
 .spinner-big {

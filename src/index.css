@@ -13,9 +13,11 @@
   --color-text-dark: #343B43;
   --color-transparent: transparent;
   --color-dark-side: #292929;
-  --color-back-in-dark: #262626;
+  --color-back-in-dark: #3f3f3f;
   --color-active: #444B59;
+  --color-disabled: #F3F4F7;
   --color-brand: #FFDC49;
+  --color-negative: #DD4333;
 }
 
 body {

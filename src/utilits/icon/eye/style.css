@@ -1,14 +1,7 @@
-.lockkey {
+.eye {
   width: 24px;
   height: 24px;
   margin-top: 15px;
-  fill: currentColor;
-}
-
-.dark {
-  fill: var(--color-black);
-}
-
-.gray {
   fill: var(--color-text-gray);
+  cursor: pointer;
 }
