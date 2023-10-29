@@ -1,17 +1,27 @@
-import { ArrowLeftSvg } from "../../../utilits/icon/arrowLeft";
+// import { ArrowLeftSvg } from "../../../utilits/icon/arrowLeft";
 
 import './style.css';
 
-function BtnText({children, classes, arrowClasses, ...props}) {
-  classes = classes.join(' ');
-  arrowClasses = arrowClasses.join(' ');
+export default function BtnText({children, classes, icon, ...props}) {
+  const forBtn = classes.join(' ');
   return (
-    <button className={"btn btn-text " + classes} type="button" {...props}>
-      <ArrowLeftSvg className={arrowClasses}/>
+    <button className={"btn btn-text " + forBtn} type="button" {...props}>
+      {icon}
       {children}
-      <ArrowLeftSvg className={"rotate-180 " + arrowClasses}/>
     </button>
   );
 }
 
-export default BtnText;
+// function BtnText({children, classes, arrowClasses, ...props}) {
+//   classes = classes.join(' ');
+//   arrowClasses = arrowClasses.join(' ');
+//   return (
+//     <button className={"btn btn-text " + classes} type="button" {...props}>
+//       <ArrowLeftSvg className={arrowClasses}/>
+//       {children}
+//       <ArrowLeftSvg className={"rotate-180 " + arrowClasses}/>
+//     </button>
+//   );
+// }
+
+// export default BtnText;

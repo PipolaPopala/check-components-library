@@ -4,26 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --color-black: #000000;
-  --color-white: #FFFFFF;
-  --color-primary: #4D6CE1;
-  --color-secondary: #E8EAEC;
-  --color-text-gray: #8A9499;
-  --color-text-dark: #343B43;
-  --color-transparent: transparent;
-  --color-dark-side: #292929;
-  --color-back-in-dark: #3f3f3f;
-  --color-active: #444B59;
-  --color-disabled: #F3F4F7;
-  --color-brand: #FFDC49;
-  --color-negative: #DD4333;
-}
-
-body {
-  font-family: 'Ubuntu', sans-serif;
-}
-
 hr {
   width: 100%;
 }
@@ -52,3 +32,28 @@ hr {
 .text {
   color: var(--color-text-gray);
 }
+
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-background: #F5F5F5;
+  --color-primary: #4D6CE1;
+  --color-secondary: #E8EAEC;
+  --color-text-gray: #8A9499;
+  --color-text-dark: #343B43;
+  --color-transparent: transparent;
+  --color-dark-side: #292929;
+  --color-back-in-dark: #3f3f3f;
+  --color-active: #444B59;
+  --color-disabled: #F3F4F7;
+  --color-brand: #FFDC49;
+  --color-negative: #DD4333;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--color-background);
+  font-size: 14px;
+  padding: 14px;
+}
+
