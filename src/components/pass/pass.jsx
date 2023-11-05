@@ -6,9 +6,9 @@ import { Car } from '../../utilits/icon/car';
 import { Arrow } from '../../utilits/icon/arrow';
 import { Close } from '../../utilits/icon/close';
 
-const ghost = 'color-ghost'
+// const ghost = 'color-ghost'
 const secondary = 'color-secondary'
-const active = 'color-active'
+// const active = 'color-active'
 const white = 'color-active-in-dark'
 const btnTextBig = 'btn-text-big'
 const btnTextMedium = 'btn-text-medium'

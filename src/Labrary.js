@@ -319,33 +319,33 @@ export default function App() {
 
         <BtnArrow
           classes={[btnArrowBig, backInDark]}
-          arrowClasses={[arrowBig, arrowWhite]}
+          arrowClasses={[arrowBig]}
           onClick={hendleClick}
         />
         <BtnArrow
           classes={[btnArrowMedium, backInDark]}
-          arrowClasses={[arrowMedium, arrowWhite]}
+          arrowClasses={[arrowMedium]}
           onClick={hendleClick}
         />
         <BtnArrow
           classes={[btnArrowSmall, backInDark]}
-          arrowClasses={[arrowSmall, arrowWhite]}
+          arrowClasses={[arrowSmall]}
           onClick={hendleClick}
         />
 
         <BtnArrow
           classes={[btnArrowBig, ghost]}
-          arrowClasses={[arrowBig, arrowWhite]}
+          arrowClasses={[arrowBig]}
           onClick={hendleClick}
         />
         <BtnArrow
           classes={[btnArrowMedium, ghost]}
-          arrowClasses={[arrowMedium, arrowWhite]}
+          arrowClasses={[arrowMedium]}
           onClick={hendleClick}
         />
         <BtnArrow
           classes={[btnArrowSmall, ghost]}
-          arrowClasses={[arrowSmall, arrowWhite]}
+          arrowClasses={[arrowSmall]}
           onClick={hendleClick}
         />
       </section>

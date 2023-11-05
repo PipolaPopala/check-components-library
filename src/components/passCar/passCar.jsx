@@ -10,7 +10,7 @@ import { Arrow } from '../../utilits/icon/arrow';
 import { Close } from '../../utilits/icon/close';
 
 const primary = 'color-primary'
-const ghost = 'color-ghost'
+// const ghost = 'color-ghost'
 const secondary = 'color-secondary'
 const active = 'color-active'
 const white = 'color-active-in-dark'
@@ -18,7 +18,7 @@ const btnTextBig = 'btn-text-big'
 const btnTextMedium = 'btn-text-medium'
 const width227 = 'width-227'
 const iconMedium = 'icon-medium'
-const hidden = 'hidden'
+// const hidden = 'hidden'
 const colorInputIconDark = 'dark'
 
 export default function Pass() {
