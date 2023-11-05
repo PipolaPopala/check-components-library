@@ -70,10 +70,11 @@
 
 .inert * {
   color: rgba(83, 83, 83, 0.2);
-  cursor: default !important;
+  cursor: default;
 }
 
 .btn-option {
+  color: rgba(83, 83, 83, 0.2);
   padding: 5px;
   background-color: transparent;
   border: none;
