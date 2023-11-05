@@ -6,7 +6,7 @@
   font-size: 16px;
   color: var(--color-text-gray);
   display: grid;
-  grid-template-columns: 40px 1fr 60px 1fr 150px 1fr 150px 1fr 220px 1fr 110px 10fr 120px 1fr 30px;
+  grid-template-columns: 40px 1fr 60px 1fr 150px 1fr 150px 1fr 220px 1fr 110px 10fr 120px 1fr 35px;
 }
 
 .pass-list__table-item-icon {
@@ -71,4 +71,11 @@
 .inert * {
   color: rgba(83, 83, 83, 0.2);
   cursor: default !important;
+}
+
+.btn-option {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

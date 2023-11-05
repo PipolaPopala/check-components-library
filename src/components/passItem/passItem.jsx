@@ -22,7 +22,7 @@ export default function PassList({ number, namePerson, nameCar, tel, date, statu
         classes={[btnTextMedium, secondary, 'pass-list__table-item-action']}
       > Пропустить
       </BtnText>
-      <Option className='pass-list__table-item-option' />
+      <button className='btn btn-option pass-list__table-item-option' type="button"><Option /></button>
     </li>
   );
 }
