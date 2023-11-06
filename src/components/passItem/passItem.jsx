@@ -5,15 +5,13 @@ import { Person } from '../../utilits/icon/person';
 import { Car } from '../../utilits/icon/car';
 import { Option } from '../../utilits/icon/option';
 
-export default function PassList({ number, namePerson, nameCar, tel, date, status }) {
+export default function PassList({ namePerson, nameCar, tel, date, status }) {
   const secondary = 'color-secondary'
   const btnTextMedium = 'btn-text-medium'
-  const inactive = status === 'Не активен' ? true : false
 
   return (
-    <li className={`pass-list__table-item ${inactive ? 'inert' : ''}`} disabled={inactive}>
+    <li className='pass-list__table-item' disabled={status === 'Не активен' ? true : false}>
       <div className='pass-list__table-item-icon'>{namePerson ? <Person /> : <Car />}</div>
-      <p className='pass-list__table-item-number'>{number}</p>
       <p className='pass-list__table-item-name'>{namePerson || nameCar}</p>
       <p className='pass-list__table-item-tel'>{tel}</p>
       <p className='pass-list__table-item-date'>{date}</p>

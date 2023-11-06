@@ -1,6 +1,5 @@
 import './style.css';
 import BtnText from '../UI/btnText/btnText';
-import CheckBox from '../UI/checkBox/checkBox';
 import PassItem from '../passItem/passItem';
 import { Plus } from '../../utilits/icon/plus';
 
@@ -10,7 +9,6 @@ export default function PassList() {
 
   const arrPasses = [
     {
-      number: '00001',
       namePerson: null,
       nameCar: 'A345BC TOYOTA',
       tel: '+7 (962) 707 4656',
@@ -18,7 +16,6 @@ export default function PassList() {
       status: 'Активен',
     },
     {
-      number: '00002',
       namePerson: 'Барт Симпсон',
       nameCar: null,
       tel: '+7 (777) 777 7777',
@@ -26,7 +23,6 @@ export default function PassList() {
       status: 'Активен',
     },
     {
-      number: '00003',
       namePerson: 'Клоун Расти',
       nameCar: null,
       tel: '+7 (969) 696 6969',
@@ -34,7 +30,6 @@ export default function PassList() {
       status: 'Отклонён',
     },
     {
-      number: '00004',
       namePerson: null,
       nameCar: 'А007ГТ PORSCHE',
       tel: '+7 (007) 707 7007',
@@ -42,7 +37,6 @@ export default function PassList() {
       status: 'Не активен',
     },
     {
-      number: '00005',
       namePerson: 'Мардж Симпсон',
       nameCar: null,
       tel: '+7 (210) 543 9876',
@@ -64,8 +58,6 @@ export default function PassList() {
       <ul className='pass-list__table'>
 
         <li className="pass-list__table-header">
-          <CheckBox name={'pass-list'} />
-          <p className='pass-list__table-header-number'>Номер</p>
           <p className='pass-list__table-header-name'>Имя</p>
           <p className='pass-list__table-header-tel'>Телефон</p>
           <p className='pass-list__table-header-date'>Дата</p>
@@ -76,8 +68,7 @@ export default function PassList() {
         {arrPasses.map((item) => {
           return (
             <PassItem
-              key={item.number}
-              number={item.number}
+              key={Math.floor(Math.random() * 10000) + 1}
               namePerson={item.namePerson}
               nameCar={item.nameCar}
               tel={item.tel}
