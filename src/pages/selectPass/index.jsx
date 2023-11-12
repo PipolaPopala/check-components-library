@@ -1,39 +1,49 @@
 import './style.css';
-import BtnText from '../UI/btnText/btnText';
-import BtnIcon from '../UI/btnIcon/btnIcon';
-import InputCar from '../UI/inputCar/inputCar';
-import InputTel from '../UI/inputTel/inputTel'
-import InputDate from '../UI/inputDate/inputDate';
+import BtnText from '../../components/UI/btnText/btnText';
+import BtnIcon from '../../components/UI/btnIcon/btnIcon';
 import { Person } from '../../utilits/icon/person';
 import { Car } from '../../utilits/icon/car';
 import { Arrow } from '../../utilits/icon/arrow';
 import { Close } from '../../utilits/icon/close';
+import { useNavigate } from 'react-router-dom';
 
-const primary = 'color-primary'
+
+
+export default function SelectionPassPage({setIsAutoPass}) {
 // const ghost = 'color-ghost'
 const secondary = 'color-secondary'
-const active = 'color-active'
+// const active = 'color-active'
 const white = 'color-active-in-dark'
 const btnTextBig = 'btn-text-big'
 const btnTextMedium = 'btn-text-medium'
 const width227 = 'width-227'
 const iconMedium = 'icon-medium'
-// const hidden = 'hidden'
-const colorInputIconDark = 'dark'
+const hidden = 'hidden'
+const navigate = useNavigate()
 
-export default function Pass() {
+const handlePersonPass = () => {
+  setIsAutoPass(false)
+  navigate('/addPass')
+}
+
+const handleCarPass = () => {
+  setIsAutoPass(true)
+  navigate('/addPass')
+}
+
   return (
     <main className='main'>
       <div className='pass'>
         <div className='pass__head'>
           <BtnIcon
-          classes={[iconMedium, secondary]}
+          classes={[hidden, iconMedium, secondary]}
           icon={<Arrow/>}
           />
           <h2>Добавить пропуск</h2>
           <BtnIcon
           classes={[iconMedium, secondary]}
           icon={<Close/>}
+          onClick={() => navigate('/')}
           />
         </div>
         <div className='pass__body'>
@@ -42,36 +52,36 @@ export default function Pass() {
               <BtnText 
               classes={[btnTextMedium, white, width227]}
               icon={<Person/>}
+              onClick={handlePersonPass}
               > Для пешехода
               </BtnText>
             </a>
             <a href="#">
               <BtnText 
-              classes={[btnTextMedium, active, width227]}
+              classes={[btnTextMedium, white, width227]}
               icon={<Car/>}
+              onClick={handleCarPass}
               > Для автомобиля
               </BtnText>
             </a>
           </div>
-          <form className='form'>
-            <p className='form__title'>Пропуск № 00001</p>
-            <InputCar 
-            classes={[]}
-            colorIcon={colorInputIconDark}
-            />
-            <InputTel 
-            classes={[]}
-            colorIcon={colorInputIconDark}
-            />
-            <InputDate 
-            classes={[]}
-            colorIcon={colorInputIconDark}
-            />
-            <BtnText
-            classes={[btnTextBig, primary]}
-            > Создать пропуск
-            </BtnText>
-          </form>
+          <div className='template'>
+            <p className='template__title'>Из шаблона</p>
+            <div className='template__type'>
+              <BtnText 
+              classes={[btnTextBig, secondary]}
+              > Курьер
+              </BtnText>
+              <BtnText 
+              classes={[btnTextBig, secondary]}
+              > Сотрудник
+              </BtnText>
+              <BtnText 
+              classes={[btnTextBig, secondary]}
+              > Клининг
+              </BtnText>
+            </div>
+          </div>
         </div>
       </div>
     </main>

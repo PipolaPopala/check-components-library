@@ -5,7 +5,7 @@ import { Person } from '../../utilits/icon/person';
 import { Car } from '../../utilits/icon/car';
 import { Option } from '../../utilits/icon/option';
 
-export default function PassList({ namePerson, nameCar, tel, date, status }) {
+export default function PassItem({ namePerson, nameCar, tel, date, status }) {
   const secondary = 'color-secondary'
   const btnTextMedium = 'btn-text-medium'
 

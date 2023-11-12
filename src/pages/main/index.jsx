@@ -1,11 +1,17 @@
-import './style.css';
-import BtnText from '../UI/btnText/btnText';
-import PassItem from '../passItem/passItem';
-import { Plus } from '../../utilits/icon/plus';
-
-export default function PassList() {
+import './style.css'
+import PassItem from '../../components/passItem/passItem'
+import PassListHeader from '../../components/passListHeader/passListHeader'
+import BtnText from '../../components/UI/btnText/btnText'
+import { Plus } from '../../utilits/icon/plus'
+import { useNavigate } from 'react-router-dom'
+ 
+export default function MainPage() {
   const primary = 'color-primary'
   const btnTextBig = 'btn-text-big'
+  const navigate = useNavigate()
+  const handleCheck = () => {
+    navigate('/selectionPass')
+  }
 
   const arrPasses = [
     {
@@ -52,19 +58,12 @@ export default function PassList() {
         <BtnText
           classes={[btnTextBig, primary]}
           icon={<Plus />}
+          onClick={handleCheck}
         > Создать пропуск
         </BtnText>
       </div>
+      <PassListHeader />
       <ul className='pass-list__table'>
-
-        <li className="pass-list__table-header">
-          <p className='pass-list__table-header-name'>Имя</p>
-          <p className='pass-list__table-header-tel'>Телефон</p>
-          <p className='pass-list__table-header-date'>Дата</p>
-          <p className='pass-list__table-header-status'>Статус</p>
-          <p className='pass-list__table-header-action'>Действие</p>
-        </li>
-
         {arrPasses.map((item) => {
           return (
             <PassItem
@@ -76,8 +75,8 @@ export default function PassList() {
               status={item.status}
             />)
         })}
-
       </ul>
     </main>
   );
 }
+

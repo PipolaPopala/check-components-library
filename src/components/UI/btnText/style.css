@@ -15,6 +15,10 @@
   width: 227px;
 }
 
+.width100 {
+  width: 100%;
+}
+
 .disabled {
   background-color: var(--color-disabled);
   color: var(--color-text-gray);
@@ -34,6 +38,11 @@
 .color-primary {
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.color-highlight-light {
+  background-color: var(--color-blue-light);
+  color: var(--color-text-gray);
 }
 
 .color-secondary { 
