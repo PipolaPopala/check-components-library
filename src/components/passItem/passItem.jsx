@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './style.module.css';
 import BtnText from '../UI/btnText/btnText';
 import PassStatus from '../UI/passStatus/passStatus';
 import { Person } from '../../utilits/icon/person';
@@ -10,17 +10,17 @@ export default function PassItem({ namePerson, nameCar, tel, date, status }) {
   const btnTextMedium = 'btn-text-medium'
 
   return (
-    <li className='pass-list__table-item' disabled={status === 'Не активен' ? true : false}>
-      <div className='pass-list__table-item-icon'>{namePerson ? <Person /> : <Car />}</div>
-      <p className='pass-list__table-item-name'>{namePerson || nameCar}</p>
-      <p className='pass-list__table-item-tel'>{tel}</p>
-      <p className='pass-list__table-item-date'>{date}</p>
-      <PassStatus className='pass-list__table-item-status'>{status}</PassStatus>
+    <li className={styles.tableItem} disabled={status === 'Не активен' ? true : false}>
+      <div className={styles.tableItemIcon}>{namePerson ? <Person /> : <Car />}</div>
+      <p className={styles.tableItemName}>{namePerson || nameCar}</p>
+      <p className={styles.tableItemTel}>{tel}</p>
+      <p className={styles.tableItemDate}>{date}</p>
+      <PassStatus className={styles.tableItemStatus}>{status}</PassStatus>
       <BtnText
-        classes={[btnTextMedium, secondary, 'pass-list__table-item-action']}
+        classes={[btnTextMedium, secondary, styles.tableItemAction]}
       > Пропустить
       </BtnText>
-      <button className='btn btn-option pass-list__table-item-option' type="button"><Option /></button>
+      <button className={[styles.btnOption, styles.tableItemOption].join(' ')} type="button"><Option /></button>
     </li>
   );
 }

@@ -1,4 +1,5 @@
-import './style.css'
+import styles from './style.module.css'
+console.log(styles)
 
 export default function EventsPage() {
   return (

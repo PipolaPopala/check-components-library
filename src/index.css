@@ -1,4 +1,8 @@
-*, ::after, ::before {
+@import-normalize;
+
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,5 +75,3 @@ body {
   font-style: normal;
   padding: 14px;
 }
-
-

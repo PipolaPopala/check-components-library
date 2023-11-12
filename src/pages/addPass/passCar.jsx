@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './style.module.css'
 import BtnText from '../../components/UI/btnText/btnText';
 import BtnIcon from '../../components/UI/btnIcon/btnIcon';
 import InputCar from '../../components/UI/inputCar/inputCar';
@@ -35,9 +35,9 @@ export default function AddPassPage({isAutoPass, setIsAutoPass}) {
   console.log(isAutoPass);
 
   return (
-    <main className='main'>
-      <div className='pass'>
-        <div className='pass__head'>
+    <main className={styles.main}>
+      <div className={styles.pass}>
+        <div className={styles.passHead}>
           <BtnIcon
           classes={[iconMedium, secondary]}
           icon={<Arrow/>}
@@ -50,8 +50,8 @@ export default function AddPassPage({isAutoPass, setIsAutoPass}) {
           onClick={() => navigate('/')}
           />
         </div>
-        <div className='pass__body'>
-          <div className='type-wrapper'>
+        <div className={styles.passBody}>
+          <div className={styles.typeWrapper}>
             <a href="#">
               <BtnText 
               classes={[btnTextMedium, white, width227]}
@@ -70,8 +70,8 @@ export default function AddPassPage({isAutoPass, setIsAutoPass}) {
               </BtnText>
             </a>
           </div>
-          <form className='form'>
-            <p className='form__title'>Пропуск № 00001</p>
+          <form className={styles.form}>
+            <p className={styles.formTitle}>Пропуск № 00001</p>
             {isAutoPass ? (<InputCar 
             classes={[]}
             colorIcon={colorInputIconDark}

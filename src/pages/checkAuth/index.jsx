@@ -1,4 +1,4 @@
-import './style.css'
+import styles from './style.module.css'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { LogoText } from '../../utilits/icon/logoText'
@@ -17,17 +17,17 @@ export default function CheckAuthPage({ setIsLoginMode, isLoginMode }) {
   }
 
   return (
-    <main className="mainAuth">
-      <div className="wrapCheck">
+    <main className={styles.mainAuth}>
+      <div className={styles.wrapCheck}>
         <Link to="/">
           <LogoText />
         </Link>
-        <h2 className="titleCheck">Войдите или зарегистрируйтесь</h2>
-        <form action="" className="auth">
+        <h2 className={styles.titleCheck}>Войдите или зарегистрируйтесь</h2>
+        <form action="" className={styles.auth}>
           <InputEmail classes={[]} colorIcon={colorInputIconDark} />
           <BtnText
             classes={[btnTextBig, primary]}
-            iconRight={<ArrowRight/>}
+            iconRight={<ArrowRight />}
             onClick={handleCheck}
           >
             Продолжить

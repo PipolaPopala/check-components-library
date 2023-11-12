@@ -3,7 +3,7 @@
   column-gap: 16px;
 }
 
-.account__photo {
+.accountPhoto {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -13,13 +13,13 @@
   justify-content: center;
 }
 
-.account__title {
+.accountTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 2px;
 }
 
-.account__name {
+.accountName {
   color: var(--color-active);
 }

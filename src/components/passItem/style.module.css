@@ -1,4 +1,4 @@
-.pass-list__table-item {
+.tableItem {
   border-radius: 10px;
   background-color: var(--color-white);
   padding: 8px 4px 8px 20px;
@@ -9,45 +9,45 @@
   grid-template-columns: 40px 1fr 150px 1fr 150px 1fr 220px 1fr 110px 10fr 120px 1fr 35px;
 }
 
-.pass-list__table-item-icon {
+.tableItemIcon {
   grid-column: 1 / 2;
   display: flex;
   align-items: center;
 }
 
-.pass-list__table-item-name {
+.tableItemName {
   grid-column: 3 / 4;
   display: flex;
   align-items: center;
   color: var(--color-text-dark);
 }
 
-.pass-list__table-item-tel {
+.tableItemTel {
   grid-column: 5 / 6;
   display: flex;
   align-items: center;
   color: var(--color-text-dark);
 }
 
-.pass-list__table-item-date {
+.tableItemDate {
   grid-column: 7 / 8;
   display: flex;
   align-items: center;
 }
 
-.pass-list__table-item-status {
+.tableItemStatus {
   grid-column: 9 / 10;
   display: flex;
   align-items: center;
 }
 
-.pass-list__table-item-action {
+.tableItemAction {
   grid-column: 11 / 12;
   display: flex;
   align-items: center;
 }
 
-.pass-list__table-item-option {
+.tableItemOption {
   grid-column: 13 / 14;
   display: flex;
   align-items: center;
@@ -57,16 +57,14 @@
 }
 
 [disabled] {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: rgba(83, 83, 83, 0.2);
+  opacity: .3;
 }
 
 [disabled] button {
-  color: rgba(83, 83, 83, 0.2);
   cursor: default;
 }
 
-.btn-option {
+.btnOption {
   color: rgba(83, 83, 83, 0.2);
   padding: 5px;
   background-color: transparent;

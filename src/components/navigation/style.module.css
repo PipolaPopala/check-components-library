@@ -1,4 +1,4 @@
-.nav__list {
+.navList {
   display: flex;
   column-gap: 16px;
 }

@@ -1,4 +1,4 @@
-import './style.css'
+import styles from './style.module.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LogoText } from '../../utilits/icon/logoText'
@@ -70,16 +70,16 @@ export default function AuthPage({ isLoginMode }) {
   }
 
   return isLoginMode ? (
-    <main className="mainAuth">
-      <div className="wrapLogin">
+    <main className={styles.mainAuth}>
+      <div className={styles.wrapLogin}>
         <Link to="/">
           <LogoText />
         </Link>
-        <h2 className="titleLogin">
+        <h2 className={styles.titleLogin}>
           С возвращением👋 <br />
           Сергей!
         </h2>
-        <form action="" className="auth">
+        <form action="" className={styles.auth}>
           <InputEmail
             classes={[]}
             colorIcon={colorInputIconDark}
@@ -108,16 +108,16 @@ export default function AuthPage({ isLoginMode }) {
       </div>
     </main>
   ) : (
-    <main className="mainAuth">
-      <div className="wrapAuth">
+    <main className={styles.mainAuth}>
+      <div className={styles.wrapAuth}>
         <Link to="/">
           <LogoText />
         </Link>
-        <h2 className="titleAuth">
+        <h2 className={styles.titleAuth}>
           Добро пожаловать👋 <br />
           Зарегистрируйтесь!
         </h2>
-        <form action="" className="auth">
+        <form action="" className={styles.auth}>
           <InputName
             classes={[]}
             colorIcon={colorInputIconDark}
@@ -171,11 +171,11 @@ export default function AuthPage({ isLoginMode }) {
             {offButton ? 'Загружаем информацию...' : 'Продолжить'}
           </BtnText>
         </form>
-        <div className="agree">
-          <p className="agreeText">
+        <div className={styles.agree}>
+          <p className={styles.agreeText}>
             Нажимая кнопку «Продолжить» вы принимаете условия{' '}
           </p>
-          <Link to="/" className="agreeLink">
+          <Link to="/" className={styles.agreeLink}>
             Пользовательского соглашения
           </Link>
         </div>

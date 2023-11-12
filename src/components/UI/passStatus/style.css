@@ -17,8 +17,8 @@
 }
 
 .inactive {
-  background-color: rgba(206, 205, 205, 0.2);
-  color: rgba(83, 83, 83, 0.2);
+  background-color: rgba(206, 205, 205, 0.8);
+  color: rgba(83, 83, 83, 0.8);
 }
 
 .rejected {

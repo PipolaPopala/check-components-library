@@ -1,5 +1,5 @@
 // import { NavLink } from 'react-router-dom'
-import './style.css'
+import styles from './style.module.css';
 import BtnText from '../../components/UI/btnText/btnText'
 import { Calendar } from '../../utilits/icon/calendar'
 import { Ticket } from '../../utilits/icon/ticket'
@@ -12,7 +12,7 @@ export default function Navigation() {
 
   return (
     <nav>
-      <ul className="nav__list">
+      <ul className={styles.navList}>
         <li>
           <NavLink to='/'>
             <BtnText classes={[btnTextMedium, active]} icon={<Ticket />}>

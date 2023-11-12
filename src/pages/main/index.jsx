@@ -1,4 +1,4 @@
-import './style.css'
+import styles from './style.module.css'
 import PassItem from '../../components/passItem/passItem'
 import PassListHeader from '../../components/passListHeader/passListHeader'
 import BtnText from '../../components/UI/btnText/btnText'
@@ -52,9 +52,9 @@ export default function MainPage() {
   ]
 
   return (
-    <main className='main'>
-      <h2 className='pass-list__title'>Пропуска</h2>
-      <div className='pass-list__add-button'>
+    <main className={styles.main}>
+      <h2 className={styles.passListTitle}>Пропуска</h2>
+      <div className={styles.passListButton}>
         <BtnText
           classes={[btnTextBig, primary]}
           icon={<Plus />}
@@ -63,7 +63,7 @@ export default function MainPage() {
         </BtnText>
       </div>
       <PassListHeader />
-      <ul className='pass-list__table'>
+      <ul className={styles.passListTable}>
         {arrPasses.map((item) => {
           return (
             <PassItem
